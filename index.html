@@ -3,128 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Utsav Khatiwada - IT Portfolio">
-    <title>Utsav Khatiwada - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .profile-pic {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .profile-pic img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .experience, .project {
-            background-color: white;
-            padding: 1.5rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-        }
-
-        .experience h3, .project h3 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #1f1f1f;
-        }
-
-        .experience p, .project p {
-            color: #555;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            background-color: #0073e6;
-            color: white;
-            padding: 0.5rem 1rem;
-            margin: 0.5rem;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #1f1f1f;
-            color: white;
-            padding: 1.5rem 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            section h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <meta name="description" content="Utsav Khatiwada - IT Professional Resume">
+    <title>Utsav Khatiwada - Professional Resume</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="projects.html">Projects</a> <!-- Link to Projects Page -->
+        <a href="#volunteer">Volunteer Work</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <header>
         <h1>Utsav Khatiwada</h1>
@@ -132,82 +26,29 @@
     </header>
 
     <div class="container">
-        <!-- Profile Picture Section -->
-        <section class="profile-pic">
-            <img src="profile-picture.jpg" alt="Utsav Khatiwada">
-        </section>
-
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                I'm an IT professional with hands-on experience in system administration, network management, and developing innovative technical solutions.
-                I'm passionate about learning and applying new technologies like Raspberry Pi, Docker, and Cloud Infrastructure. I enjoy solving problems and
-                creating meaningful impact through technology. Welcome to my portfolio!
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-
-            <div class="experience">
-                <h3>IT Support Officer - [Company Name]</h3>
-                <p>Provided technical support and assistance in system administration, hardware troubleshooting, and network management.</p>
-                <p>Maintained a high ticket resolution rate and achieved consistently high user satisfaction through a professional and customer-focused approach.</p>
-            </div>
-
-            <div class="experience">
-                <h3>Project: Ad Blocker for Home Network</h3>
-                <p>Developed and implemented a network-wide ad blocker using Raspberry Pi Zero and Pi-hole, improving network speed and privacy.</p>
-            </div>
-
-            <div class="experience">
-                <h3>Project: Content Delivery Network</h3>
-                <p>Designed a media server using Raspberry Pi 4, OpenMediaVault, and Docker for seamless media streaming within a home network.</p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Ad Blocker for Home Network</h3>
-                <p>Using Raspberry Pi Zero, Raspberry Pi OS, and Pi-hole to create a network-wide ad blocker, enhancing privacy and improving network performance.</p>
-            </div>
-
-            <div class="project">
-                <h3>Content Delivery Network</h3>
-                <p>Built a media server using Raspberry Pi 4, OpenMediaVault, Docker, and Plex for smooth streaming of TV shows and media content within a home network environment.</p>
-            </div>
-
-            <div class="project">
-                <h3>Student Resource Portal (Notion)</h3>
-                <p>Developed a comprehensive online portal for university students to access academic resources, organized efficiently for productivity and success.</p>
-            </div>
+            <p>A passionate and reliable IT professional with a knack for system administration and support.</p>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
             <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill">System Administration</span>
-                <span class="skill">Network Management</span>
-                <span class="skill">Raspberry Pi</span>
-                <span class="skill">Docker</span>
-                <span class="skill">Azure</span>
-                <span class="skill">Office 365</span>
-                <span class="skill">Pi-hole</span>
-                <span class="skill">OpenMediaVault</span>
-                <span class="skill">Linux</span>
-            </div>
+            <ul>
+                <li>Operating Systems: Windows 10/11, MacOS, iOS, Android</li>
+                <li>Cloud Technologies: Active Directory, Microsoft 365, Teams, SharePoint</li>
+                <li>Networking: DHCP, DNS, VLAN, TCP/IP</li>
+            </ul>
         </section>
+
+        <!-- More sections like Certifications, Experience, Volunteer Work, etc. -->
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email me at: <a href="mailto:utsav@example.com">utsav@example.com</a></p>
+            <p>Email me at: <a href="mailto:utsavkth@gmail.com">utsavkth@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/utsavkhatiwada" target="_blank">Utsav Khatiwada</a></p>
         </section>
     </div>
 
@@ -215,5 +56,6 @@
         <p>© 2024 Utsav Khatiwada</p>
     </footer>
 
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
