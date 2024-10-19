@@ -1,4 +1,3 @@
-/* Color Palette */
 :root {
     --bg-color: #0d1117;
     --primary-color: #58a6ff;
@@ -8,17 +7,14 @@
     --glow-color: rgba(88, 166, 255, 0.5);
 }
 
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    overflow-x: hidden;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #161b22;
     position: sticky;
@@ -26,8 +22,6 @@ nav {
     z-index: 1000;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid var(--primary-color);
 }
 
 nav a {
@@ -35,7 +29,6 @@ nav a {
     margin: 0 1.5rem;
     text-decoration: none;
     font-size: 1.2rem;
-    position: relative;
 }
 
 nav a:hover {
@@ -43,35 +36,11 @@ nav a:hover {
     transition: color 0.3s ease-in-out;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: var(--hover-color);
-    left: 0;
-    bottom: -5px;
-    transition: width 0.4s ease-in-out;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Header */
 header {
     background-color: #161b22;
     color: var(--primary-color);
     text-align: center;
     padding: 3rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -86,72 +55,26 @@ header p {
     color: var(--accent-color);
 }
 
-/* Section Headers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 section h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     text-transform: uppercase;
-    position: relative;
-    padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
-section h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 3px;
-    background-color: var(--accent-color);
-}
-
-/* Project Cards */
-.project-card {
-    background-color: #161b22;
-    color: var(--text-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    color: var(--primary-color);
-}
-
-.project-card p {
-    color: var(--text-color);
-}
-
-/* Neon Glow Effects */
-.glow-effect {
-    text-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color);
-}
-
-/* Footer */
 footer {
     text-align: center;
     background-color: #161b22;
     color: var(--primary-color);
     padding: 2rem 0;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Animations */
-nav a:hover,
-.project-card:hover {
-    transition: all 0.3s ease-in-out;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
